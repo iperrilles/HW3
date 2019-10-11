@@ -8,8 +8,17 @@
       <td> Loan Amount: </td> <td> <input type="text" name="A" /> </td>
     </tr>
     <tr>
-      <td> Second Number: </td> <td> <input type="text" name="numTwo" /> </td>
-    </tr>
+      <td> Number of payments per year: </td> <td> <input type="text" name="nperiod" /> </td>
+	</tr>
+	<tr>
+		<td> Number of years: </td> <td> <input type="text" name="nyears" /> </td>
+	  </tr>
+	<tr>
+		<td> Annual Interest Rate: </td> <td> <input type="text" name="i" /> </td>
+	  </tr>
+	  <tr>
+		<td> Discount Factor: </td> <td> {{Discount}} </td>
+	  </tr>
   </table>
     <br>
   <input class="button" type="submit" formaction="/calculate" value="Calculate" />
