@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>{{pageTitle}}</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
-    </head>
+<html>
+<head>
+<title>{{ pageTitle }}</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+</head>
+<body>
+    <h1> Loan Payment Calculator </h1>
+<hr>
 
-    <body>
+<div class="wrapper">
 
-        {% block body %}
+	<div class="data">
+	    {% block body %}
 
-        {% endblock %}
-       
-    </body>
+	    {% endblock %}
+	</div> <!-- close the data div -->
+<div style="clear:both;"></div> <!-- clear styling -->
 
+</div> <!-- close the wrapper div -->
+
+</body>
 </html>
