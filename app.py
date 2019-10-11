@@ -16,7 +16,7 @@ def calculation():
         i = float(form['interest']) / float(form['nperiod'])
         D = ((( 1 + i)**n) - 1 ) / ( i * ( 1+ i)**n)
         P = A/D
-        return render_template('index.html', display=P, Discount=D, pageTitle='Loan Payment Calculator')
+        return render_template('index.html', display='${:0,.2f}'.format(P), pageTitle='Loan Payment Calculator')
 
     return redirect("/")
 
